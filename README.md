@@ -8,7 +8,7 @@ Built with **Spring Boot**, **Angular**, **AWS EKS**, **RDS (MySQL)**, **MongoDB
 ---
 
 ## 🏗️ High-Level Architecture
-
+```
              ┌─────────────────────────────┐
              │        Jenkins + CI/CD      │
              │ (GitHub → Build → Docker)   │
@@ -54,7 +54,7 @@ Built with **Spring Boot**, **Angular**, **AWS EKS**, **RDS (MySQL)**, **MongoDB
      └───────────────────────────────┘
 
 
----
+```
 
 ## 🔗 Repositories (Organization: `RestaurantFoodOrdering`)
 
