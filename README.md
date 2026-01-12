@@ -36,7 +36,7 @@ Built with **Spring Boot**, **Angular**, **AWS EKS**, **RDS (MySQL)**, **MongoDB
           ▼           ▼                    ▼
 ┌────────────────┐┌────────────────┐┌────────────────┐
 │  Angular (FE)   ││ Spring Boot MS ││  Eureka Server │
-│   Nginx:80      ││ 9001–9004      ││ 8761           │
+│   Nginx:80      ││ 9091–9094      ││ 8761           │
 └────────────────┘└────────────────┘└────────────────┘
          │                │
          └────Ingress─────┘
@@ -74,19 +74,19 @@ Built with **Spring Boot**, **Angular**, **AWS EKS**, **RDS (MySQL)**, **MongoDB
 |----------------------|------------------------------------------|-----:|
 | Frontend (Angular)   | `msdevcoder123/food-delivery-app-fe`     |   80 |
 | Eureka Server        | `msdevcoder123/eureka-server`            | 8761 |
-| Restaurant-MS        | `msdevcoder123/restaurant-service`       | 9001 |
-| FoodCatalogue-MS     | `msdevcoder123/footcatalogue-service`    | 9002 |
-| User-MS              | `msdevcoder123/user-service`             | 9003 |
-| Order-MS             | `msdevcoder123/order-service`            | 9004 |
+| Restaurant-MS        | `msdevcoder123/restaurant-service`       | 9091 |
+| FoodCatalogue-MS     | `msdevcoder123/footcatalogue-service`    | 9092 |
+| User-MS              | `msdevcoder123/user-service`             | 9093 |
+| Order-MS             | `msdevcoder123/order-service`            | 9094 |
 
 ### Ingress path mapping (example)
 | Path prefix         | Service name             | Service Port |
 |---------------------|--------------------------|-------------:|
 | `/`                 | `angular-service`        | 80           |
-| `/restaurant`       | `restaurant-service`     | 9001         |
-| `/foodcatalogue`    | `foodcatalogue-service`  | 9002         |
-| `/user`             | `user-service`           | 9003         |
-| `/order`            | `order-service`          | 9004         |
+| `/restaurant`       | `restaurant-service`     | 9091         |
+| `/foodcatalogue`    | `foodcatalogue-service`  | 9092         |
+| `/user`             | `user-service`           | 9093         |
+| `/order`            | `order-service`          | 9094         |
 | `/eureka` *(opt.)*  | `eureka-service`         | 8761         |
 
 > Adjust to match your `ingress.yml` under the GitOps repo.
